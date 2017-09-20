@@ -29,3 +29,41 @@ console.log(sparky)
 sparky.bark()
 sparky.chaseTail()
 sparky.getPrice()
+
+class Cat extends Pet{
+	constructor(price, name){
+		super(name);
+		this.price = price;
+	}
+	purr(){
+		console.log('purrrr')
+	}
+	clean(){
+		console.log('cleaning')
+	}
+	getPrice(){
+		console.log(this.price)
+	}
+}
+
+const sprinkles = new Cat(400, "Sprinkles")
+console.log(sprinkles.setOwner('Jim'))
+console.log(sprinkles)
+sprinkles.purr()
+sprinkles.clean()
+sprinkles.getPrice()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
